@@ -1,8 +1,10 @@
 function generateMarkdown(data) {
-    return `
-    ${data.title}
+
+    let markdown = 
     
-    `;
+`${data.title}
+`
+    return markdown;
 }
 
 module.exports = generateMarkdown;

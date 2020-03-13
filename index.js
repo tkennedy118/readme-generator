@@ -1,5 +1,4 @@
 const fs        = require("fs");
-const axios     = require("axios");
 const inquirer  = require("inquirer");
 
 const api       = require("./utils/api");
@@ -63,24 +62,22 @@ const writeToFile = function(filename, data) {
 
 const init = function() {
 
-    try {
-        inquirer
-            .prompt(questions)
-            .then(inqResponse => {
+    inquirer.prompt(questions).then(({ username }) => {
+        console.log("Searching...");
 
-                console.log("Searching...");
-                const API = api.getUser(inqResponse.username);
-                console.log(API);
-        
-        //          .then( ({ data }) => {
-        //              writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data }));
-        //          })
-        //      }
+        api.getUser(username).then(({ data }) => {
+                writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data}));
+            })
+        .catch(error => {
+            return error;
         });
-    } catch {
-        console.log(err);
-    }
 
+    
+    //          .then( ({ data }) => {
+    //              writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data }));
+    //          })
+    //      }
+    });
 }
 
 init();
