@@ -25,9 +25,10 @@ const questions = [
         default: "none"
     },
     {
-        type: "choices",
+        type: "list",
         name: "license",
-        message: ['ISC', 'MIT', 'Apache', 'GPL', 'Other'],
+        message: "License:",
+        choices: ['ISC', 'MIT', 'Apache', 'GPL', 'Other'],
         default: "ISC"
     },
     {
@@ -54,11 +55,31 @@ const questions = [
     }
 ];
 
-const writeToFile = (fileName, data) => {
-
+const writeToFile = function(filename, data) {
+    
+    file = path.join(process.cwd(), filename);
+    return fs.writeFileSync(file, data);
 }
 
-const init = () => {
+const init = function() {
+
+    try {
+        inquirer
+            .prompt(questions)
+            .then(inqResponse => {
+
+                console.log("Searching...");
+                const API = api.getUser(inqResponse.username);
+                console.log(API);
+        
+        //          .then( ({ data }) => {
+        //              writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data }));
+        //          })
+        //      }
+        });
+    } catch {
+        console.log(err);
+    }
 
 }
 
