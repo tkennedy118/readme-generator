@@ -1,10 +1,11 @@
-const fs        = require("fs");
-const inquirer  = require("inquirer");
+const fs                = require("fs");
+const inquirer          = require("inquirer");
+const path              = require("path");
 
-const api       = require("./utils/api");
-const gm        = require("./utils/generateMarkdown");
+const api               = require("./utils/api");
+const generateMarkdown  = require("./utils/generateMarkdown");
 
-// questions about project
+// array of questions for inquirer
 const questions = [
     {
         type: "input",
@@ -62,21 +63,12 @@ const writeToFile = function(filename, data) {
 
 const init = function() {
 
-    inquirer.prompt(questions).then(({ username }) => {
+    inquirer.prompt(questions).then(inqResponse => {
         console.log("Searching...");
 
-        api.getUser(username).then(({ data }) => {
-                writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data}));
-            })
-        .catch(error => {
-            return error;
-        });
-
-    
-    //          .then( ({ data }) => {
-    //              writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data }));
-    //          })
-    //      }
+        api.getUser(inqResponse.username).then(({ data }) => {
+            writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data }));
+        })
     });
 }
 

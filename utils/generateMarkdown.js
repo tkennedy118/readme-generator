@@ -1,9 +1,15 @@
 function generateMarkdown(data) {
 
+    console.log(data)
+
+/******************************************** MARKDOWN ********************************************/
     let markdown = 
+`#${data.title}
+
     
-`${data.title}
-`
+
+    `
+
     return markdown;
 }
 
