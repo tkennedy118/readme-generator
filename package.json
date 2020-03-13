@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "An application that creates readme files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkennedy118/readme-generator.git"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "Tyler Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkennedy118/readme-generator/issues"
+  },
+  "homepage": "https://github.com/tkennedy118/readme-generator#readme"
+}
