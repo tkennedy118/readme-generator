@@ -4,7 +4,7 @@ function generateMarkdown(data) {
 
 /************************************ MARKDOWN ************************************/
     let markdown = `# ${data.title} 
-[<img src="http://raster.shields.io/badge/random-badge-lightgray?style-flat-square](http://github.com/tkennedy118/readme-generator)
+![](https://img.shields.io/badge/random-badge-blue?style=flat-square)
 
 <a name="description"></a>
 ## Description
