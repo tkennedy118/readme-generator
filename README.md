@@ -5,7 +5,8 @@
 
 <a name="description"></a>
 ## Description
-description goes here
+This application is a command line interface that generates a readme template based on user input. The purpose of this
+project is to create readmes more efficiently so that users can focus more on the project being created. 
 
 ## Table of Contents
 1. [ Description ](#description)
@@ -18,24 +19,36 @@ description goes here
 
 <a name="installation"></a>
 ## Installation
-npm install
+Users should run 'npm install' to get required dependencies. 
+
+
+JavaScript native dependencies include:
+* [fs](https://www.npmjs.com/package/file-system)
+* [path](https://www.npmjs.com/package/path)
+
+
+npm installs include:
+* [inquirer](https://www.npmjs.com/package/inquirer)
+* [axios](https://www.npmjs.com/package/axios)
 
 <a name="usage"></a>
 ## Usage
-nothing
+Users should feel free to use the template as a starting point for readme files, but know that this will not
+constitute a fully realized readme. Feel free to delete and add sections as needed. This readme includes unnecessary 
+sections simply to demonstrate the generated readme.
 
 <a name="license"></a>
 ## License
-Other
+No license for this project.
 
 <a name="contributing"></a>
 ## Contributing
-nothing
+No contributions for this project.
 
 <a name="testing"></a>
 ## Testing
-npm test
+No testing for this project.
 
 <a name="questions"></a><a name="description"></a>
 # Questions
-For any questions, please contact [tkennedy118](http://github.com/tkennedy118) at null.
+For any questions, please contact [tkennedy118](http://github.com/tkennedy118).
