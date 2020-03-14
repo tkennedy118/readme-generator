@@ -1,7 +1,5 @@
 function generateMarkdown(data) {
 
-    console.log(data);
-
 /************************************ MARKDOWN ************************************/
     let markdown = `# ${data.title} 
 <center><img src="https://avatars3.githubusercontent.com/u/${data.id}?s=25&v=4" alt="${data.login}" /></center>
