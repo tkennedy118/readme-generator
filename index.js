@@ -55,17 +55,22 @@ const questions = [
     }
 ];
 
+// FUNCTION: takes in two arguments (filename, data) and writes the 'data' to a file named 'filename'. 
 const writeToFile = function(filename, data) {
     
     file = path.join(process.cwd(), filename);
-    return fs.writeFileSync(file, data);
+    fs.writeFileSync(file, data, "utf8");
 }
 
+
+// FUNCTION: prompt user for input and sends response through api promise function to write to a file.
 const init = function() {
 
+    // prompt questions array
     inquirer.prompt(questions).then(inqResponse => {
-        console.log("Searching...");
+        console.log("Generating...");
 
+        // sends user data through promise to generate markdown file
         api.getUser(inqResponse.username).then(({ data }) => {
             writeToFile("README.md", generateMarkdown({ ...inqResponse, ...data }));
         })

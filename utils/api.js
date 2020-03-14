@@ -2,7 +2,7 @@ const axios = require("axios");
 
 const api =  {
 
-    // PROMISE: return user data from GitHub api or return error
+    // PROMISE: return user data from GitHub api or returns error
     getUser: username => {
 
         return new Promise((resolve, reject) => {
