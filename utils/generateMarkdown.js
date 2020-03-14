@@ -3,7 +3,12 @@ function generateMarkdown(data) {
     console.log(data)
 
 /************************************ MARKDOWN ************************************/
-    let markdown = `# ${data.title}
+    let markdown = `# ${data.title} 
+[<img src="http://raster.shields.io/badge/random-badge-lightgray?style-flat-square](http://github.com/tkennedy118/readme-generator)
+
+<a name="description"></a>
+## Description
+${data.description}
 
 ## Table of Contents
 1. [ Description ](#description)
@@ -14,33 +19,33 @@ function generateMarkdown(data) {
 6. [ Testing ](#testing)
 7. [ Questions ](#questions)
 
-<a name="description"></a>
-# Description
-${data.description}
-
 <a name="installation"></a>
-# Installation
+## Installation
 ${data.install}
 
 <a name="usage"></a>
-# Usage
+## Usage
 ${data.usage}
 
 <a name="license"></a>
-# License
+## License
 ${data.license}
 
 <a name="contributing"></a>
-# Contributing
+## Contributing
 ${data.contribute}
-
+<a name="description"></a>
+# Description
+${data.description}
 <a name="testing"></a>
-# Testing
+## Testing
 ${data.tests}
 
-<a name="questions"></a>
-# Questions
-For any questions, please contact ${data.name} at ${data.email}.
+<a name="questions"></a><a name="description"></a>
+# Description
+${data.description}
+## Questions
+For any questions, please contact [](https://avatars3.githubusercontent.com/u/16977628?s=460&u=20f0858359030461d69101d722744520cc7ac379&v=4)[${data.login}](http://tkennedy118) at ${data.email}.
 `;
 /**********************************************************************************/
     return markdown;

@@ -1,4 +1,9 @@
-# random-name
+# readme-generator 
+![](https://img.shields.io/badge/random-badge-blue?style=flat-square)
+    
+<a name="description"></a>
+## Description
+This is a command line interface that prompts the user for...
 
 ## Table of Contents
 1. [ Description ](#description)
@@ -9,30 +14,26 @@
 6. [ Testing ](#testing)
 7. [ Questions ](#questions)
 
-<a name="description"></a>
-# Description
-This is a super fucking random project
-
 <a name="installation"></a>
-# Installation
+## Installation
 npm install
 
 <a name="usage"></a>
-# Usage
-Do it gently, please.
+## Usage
+This is just a template README.md generator.
 
 <a name="license"></a>
-# License
-MIT
+## License
+Other
 
 <a name="contributing"></a>
-# Contributing
-Nothing at all.
+## Contributing
+No need to contribute.
 
 <a name="testing"></a>
-# Testing
-npm test
+## Testing
+none
 
 <a name="questions"></a>
-# Questions
-For any questions, please contact Tyler Kennedy at null.
+## Questions
+For any questions, please contact ![](https://avatars3.githubusercontent.com/u/16977628?s=460&u=20f0858359030461d69101d722744520cc7ac379&v=4&width="100")[Tyler Kennedy](http://github.com/tkennedy118) at null.
