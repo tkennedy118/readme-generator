@@ -45,7 +45,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "repo",
+        name: "usage",
         message: "What should the user know about using this repository?",
     },
     {
