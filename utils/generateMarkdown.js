@@ -1,9 +1,11 @@
 function generateMarkdown(data) {
 
-    console.log(data)
+    console.log(data);
 
 /************************************ MARKDOWN ************************************/
     let markdown = `# ${data.title} 
+<center><img src="https://avatars3.githubusercontent.com/u/${data.id}?s=25&v=4" alt="${data.login}" /></center>
+
 ![](https://img.shields.io/badge/random-badge-blue?style=flat-square)
 
 <a name="description"></a>
@@ -34,18 +36,14 @@ ${data.license}
 <a name="contributing"></a>
 ## Contributing
 ${data.contribute}
-<a name="description"></a>
-# Description
-${data.description}
+
 <a name="testing"></a>
 ## Testing
 ${data.tests}
 
 <a name="questions"></a><a name="description"></a>
-# Description
-${data.description}
-## Questions
-For any questions, please contact [](https://avatars3.githubusercontent.com/u/16977628?s=460&u=20f0858359030461d69101d722744520cc7ac379&v=4)[${data.login}](http://tkennedy118) at ${data.email}.
+# Questions
+For any questions, please contact [${data.login}](http://github.com/${data.login}) at ${data.email}.
 `;
 /**********************************************************************************/
     return markdown;

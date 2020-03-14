@@ -1,9 +1,11 @@
 # readme-generator 
+<center><img src="https://avatars3.githubusercontent.com/u/16977628?s=25&v=4" alt="tkennedy118" /></center>
+
 ![](https://img.shields.io/badge/random-badge-blue?style=flat-square)
-    
+
 <a name="description"></a>
 ## Description
-This is a command line interface that prompts the user for...
+description goes here
 
 ## Table of Contents
 1. [ Description ](#description)
@@ -20,7 +22,7 @@ npm install
 
 <a name="usage"></a>
 ## Usage
-This is just a template README.md generator.
+nothing
 
 <a name="license"></a>
 ## License
@@ -28,12 +30,12 @@ Other
 
 <a name="contributing"></a>
 ## Contributing
-No need to contribute.
+nothing
 
 <a name="testing"></a>
 ## Testing
-none
+npm test
 
-<a name="questions"></a>
-## Questions
-For any questions, please contact ![](https://avatars3.githubusercontent.com/u/16977628?s=460&u=20f0858359030461d69101d722744520cc7ac379&v=4&width="100")[Tyler Kennedy](http://github.com/tkennedy118) at null.
+<a name="questions"></a><a name="description"></a>
+# Questions
+For any questions, please contact [tkennedy118](http://github.com/tkennedy118) at null.
